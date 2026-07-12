@@ -9,7 +9,7 @@ import type {
   Relatorio,
 } from "./types";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:5000/api";
+const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "azuos-api-production.up.railway.app/api";
 
 export class ApiRequestError extends Error {
   status: number;
