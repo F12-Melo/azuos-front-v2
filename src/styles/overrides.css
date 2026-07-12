@@ -1,0 +1,81 @@
+/* Pequenos ajustes para funcionar com divs em vez de classes direto na tag <body>,
+   já que no Next.js App Router o layout raiz controla a tag <body> globalmente. */
+div.app-body {
+  display: flex;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.sidebar__divider {
+  margin: 16px 10px;
+  border: none;
+  border-top: 1px solid var(--color-line);
+}
+
+.user-card__logout {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--color-text-soft);
+  cursor: pointer;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.user-card__logout:hover {
+  background: rgba(255, 91, 91, 0.14);
+  color: #ff8a8a;
+}
+
+.quick-add {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.quick-add__input {
+  flex: 1;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 8px 10px;
+  color: var(--color-text);
+  font-size: 0.82rem;
+}
+
+.form-steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--layout-gap, 20px);
+}
+
+.form-question .field__label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: var(--color-text-strong);
+  line-height: 1.5;
+}
+
+.form-textarea {
+  width: 100%;
+  min-height: 96px;
+  resize: vertical;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 12px 14px;
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}

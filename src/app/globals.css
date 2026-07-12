@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;700&display=swap");
+@import "tailwindcss";
+
+/* Design system original da plataforma AzuOS (reaproveitado do frontend estático) */
+@import "../styles/variables.css";
+@import "../styles/global.css";
+@import "../styles/components.css";
+@import "../styles/utilities.css";
+@import "../styles/overrides.css";
+
+/* Estilos específicos de página */
+@import "../styles/pages/index.css";
+@import "../styles/pages/login.css";
+@import "../styles/pages/dashboard.css";
+@import "../styles/pages/formulario.css";
+@import "../styles/pages/historico.css";
+@import "../styles/pages/ranking.css";
+@import "../styles/pages/equipe.css";
