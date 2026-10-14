@@ -9,7 +9,7 @@ import type {
   Relatorio,
 } from "./types";
 
-const API_URL = process.env.API_AZUOS ?? "https://web-production-e3348.up.railway.app/";
+const API_URL = process.env.API_AZUOS ?? "https://web-production-e3348.up.railway.app";
 
 export class ApiRequestError extends Error {
   status: number;
